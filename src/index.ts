@@ -1,5 +1,5 @@
-import { Sorter } from "./Sorter";
+const env = process.env;
+const target = env.target
+const type = env?.type ?? 'index.js';
 
-const sorter =  new Sorter([10,9,8,7,6,5,-1]);
-sorter.sort();
-// console.log(sorter.data)
+require(`./${target}/${type}`);

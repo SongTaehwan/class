@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "func() { export target=$1 type=$2 && concurrently -n build,run -c blue.bold,green.bold npm:start:build npm:start:run; }; func",
     "start:build": "tsc -w",
-    "start:run": "nodemon build/inheritance/index.js",
-    "start": "concurrently -n build,run npm:start:build npm:start:run -c blue.bold,green.bold"
+    "start:run": "nodemon build/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^13.7.1",
     "concurrently": "^5.1.0",
     "nodemon": "^2.0.2"
   }
