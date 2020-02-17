@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "func() { export target=$1 type=$2 && concurrently -n build,run -c blue.bold,green.bold npm:start:build npm:start:run; }; func",
+    "start": "func() { export target=$1 type=$2 && concurrently -n build,run -c blue.bold,green.bold npm:start:build npm:start:run; }; func ",
     "start:build": "tsc -w",
     "start:run": "nodemon build/index.js"
   },

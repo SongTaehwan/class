@@ -34,16 +34,3 @@ export class CsvFileReader {
     ];
   }
 }
-
-
-const SquareLayout = styled.View`
-  padding: 20
-`
-
-const SquareLayout = ({ children, ...props }) => {
-  return (
-    <View style={{ padding: 20,}} {...props}>
-      {children}
-    </View>
-  )
-}
